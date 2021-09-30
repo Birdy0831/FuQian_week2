@@ -1,0 +1,29 @@
+---
+title: "finnally"
+author: "FuQian"
+date: "9/30/2021"
+output: pdf_document
+---
+
+# Air quality dataset
+
+## Introduction
+Daily air quality measurements in **New York**, May to September 1973.
+
+## Make a data frame from the air quality dataset
+
+**1.** Take rows **1-10** from airquality dataset
+
+
+**2.** **'s'** is a data frame which includes rows 1-10 from airquality dataset
+
+
+## Clean the dataset from NA values
+**3.** Using code *complete.case()* to **filter** the rows which contain NA in data set **'s'**.
+```{r}
+s<-data.frame(airquality[1:10,])
+s
+good<-complete.cases(s)
+s[good,]
+```
+
